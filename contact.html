@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            top: 0px;
+            font-weight: bold;
+        }
+        /* nav bar*/
+        #navbar::before{
+            content: "";
+            position: absolute;
+            background-color:  rgb(255 174 52);
+            border-radius: 10px;
+            height: 100px;
+            width: 100%;
+            z-index:-1;
+            opacity: 0.9;
+        }
+        #navbar{
+            display: flex;
+            position: sticky;
+        }
+        #logo{
+         width: 11%;
+         height: 100px;
+     }
+     #navbar ul{
+         display: flex;
+         padding: 26px 0px 0px 0px;
+         list-style: none;
+     }
+     .items{
+         color: rgb(255 174 52);
+         font-size:1.4rem;
+         padding:8px 21px;
+         font-weight: bold;
+     }
+     .items a{
+         text-decoration: none;
+         color: black;
+
+     }
+        #cont{
+            text-align: center;
+            margin:47px 0px 56px 0px;
+            font-size: 1.4rem;
+        }
+        #cont h1{
+            padding:0px 0px 20px 0px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+        .cont-elements{
+            border: 5px solid black;
+            border-radius: 10px;
+            margin:0px 65px;
+            padding: 30px 0px 0px 0px;
+            width: 30%;
+            text-align: center;
+        }
+        .cont-elements:hover{
+            background-color: rgb(243, 181, 66);
+            font-size: 1.2rem;
+            width: 31%;
+            height: 350px;
+        }
+        /* setting contact css */
+        #contactUs p{
+            padding:10px 10px;
+        }
+        #ComeSeeUs h2{
+            padding:0px 0px 60px 0px;
+        }
+        #support h2{
+            padding:0px 0px 60px 0px;
+        }
+        #rdsection{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        #rdsection::before{
+            content: "";
+            background-color: orange;
+            position: absolute;
+            width: 100%;
+            height: 400px;
+            left: 0px;
+            right: 0px;
+            z-index: -4;
+            opacity: 0.6;
+        }
+        .input{
+            border-radius: 10px;
+            width:40%;
+            height: 28px;
+        }
+        .rddiv #rdhead{
+            padding:29px 0px 40px 0px;
+        }
+        #submitbtn{
+            width: 10%;
+            height: 25px;
+            margin:20px 20px;
+            border-radius: 10px;
+        }
+        .fonts{
+            width: 25%;
+            height: 50px;
+        }
+        @media only screen and (max-width:1056px){
+            .cont-elements{
+                margin:0px 7px;
+            }
+        }
+        @media only screen and (max-width:570px){
+            #navbar{
+                 flex-direction: column;
+                 align-items: center;
+             }   
+             #navbar::before{
+                 display: none;
+             }
+             #navbar{
+                 background-color: orange;
+                 height: 80px;
+             }
+             #navbar ul li{
+                 margin: -33px -12px 0px -21px;
+                 padding: 0px 26px 0px 19px;
+             }
+             #logo{
+                width: 32%;
+                height: 79px;
+             }
+             #navbar ul{
+                 padding:13px 0px 0px 0px;
+             }
+             #navbar ul li{
+                 font-size: 1rem;
+             }
+            .container{
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .cont-elements{
+                width: 60%;
+                margin: 3px 0px;
+            }
+            .input{
+                width:65%;
+            }
+            #submitbtn{
+                width:25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="contactimg\logo.jpg" id="logo">
+        <ul>
+            <li class="items"><a href="#" class="acher">Home</a></li>
+            <li class="items"><a href="#" class="acher">Traditional-wear</a></li>
+            <li class="items"><a href="#" class="acher">About us</a></li>
+            <li class="items"><a href="#" class="acher">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="cont">
+      <h1>CONTACT PARAMPARA</h1>
+      <p>We appriciate your Interest in parampara.<br>
+        Please select from the option below.</p>
+    </section>
+    <section class="container">
+        <div id="contactUs" class="cont-elements">
+        <img src="contactimg\telephone.png" class="fonts">   
+        <h1>Contact Us</h1>
+        <p><b>Marketing Team</b><br>
+            +91-62627432475</p>
+        <p><b>Web-application support</b><br>
+                +91-6268530480</p> 
+        <p><b>Application support</b><br>
+                +91-6268530480</p> 
+        <p><b>Content-support</b><br>
+                +91-6268530480</p> 
+        </div>
+        <div id="ComeSeeUs" class="cont-elements">
+        <img src="contactimg\map-marker.png" class="fonts">
+          <h2>Come see us</h2>
+          <p><b>Parampara Inc.</b><br>
+           Airport road,<br>Gandhi nagar, Bhopal(M.P)</p>
+        </div>
+        <div id="support" class="cont-elements">
+            <img src="contactimg\clock.png" class="fonts">
+        <h2>24/7 support</h2>
+        <p><b>Parampara</b><br>
+         The online cloths selling company</p>
+        </div>
+    </section>
+    <section id="rdsection">
+        <div class="rddiv">
+            <h1 id="rdhead">Contact us</h1>
+        </div>
+        <div class="rddiv">
+            <p class="inputc">Name:</p><input type="text" id="name" placeholder="Input your name" class="input">
+        </div>
+        <div class="rddiv">
+         <p class="inputc">E-mail:</p><input type="email" id="email" placeholder="Input your email" class="input">
+        </div>
+        <div class="rddiv">
+         <p class="inputc">Contact number:</p><input type="number" id="number" placeholder="Input your number" class="input">
+        </div>
+        <div class="rddiv">
+       <p class="inputc">Address:</p><input type="text" id="address" placeholder="Input your address" class="input">
+        </div>
+        <div>
+            <button id="submitbtn">Submit</button>
+        </div>
+    </section>
+</body>
+</html>
